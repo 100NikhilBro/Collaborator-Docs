@@ -15,17 +15,17 @@ Future Plans
 
 ##  Screenshots
 
-###  Document Dashboard  
-![Dashboard](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20182826.png)
 
-###  Add Collaborator Modal  
-![Add Collaborator](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20182941.png)
+![Home](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20182826.png)
 
-###  Collaborators List  
-![Collaborators List](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20182955.png)
 
-###  Edit Access and Role  
-![Edit Access](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20183121.png)
+![SignUp](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20182941.png)
 
-### 🗑 Remove Collaborator  
-![Remove Collaborator](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20183129.png)
+  
+![LogIn](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20182955.png)
+
+ 
+![Doc Page](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20183121.png)
+
+  
+![Collaborator Page](https://github.com/100NikhilBro/Collaborator-Docs/blob/master/Screenshot%202025-06-11%20183129.png)
