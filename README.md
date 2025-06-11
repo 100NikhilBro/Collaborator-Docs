@@ -15,7 +15,7 @@ Security Features
 -  express-validator – To validate and sanitize incoming request data.
 
 Future Plans
-- Implement real-time updates using Socket.IO
+- Implement real-time updates using Socket.IO and Y.js
 - Add activity timeline in frontend
 
 
