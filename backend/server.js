@@ -4,6 +4,8 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 const dotenv = require('dotenv');
+const hpp = require('hpp');
+
 dotenv.config();
 
 const dbConnect = require('./config/db');
@@ -17,6 +19,7 @@ app.use(cors({
 }));
 app.use(morgan("dev"));
 app.use(helmet());
+app.use(hpp());
 
 
 app.use(cookieParser());
