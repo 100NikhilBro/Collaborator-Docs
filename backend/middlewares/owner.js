@@ -2,6 +2,7 @@ const Doc = require("../models/Document");
 
 const checkDocumentOwnership = async(req, res, next) => {
     try {
+        
         // documentId ya param se ya body se le lo
         const docId = req.params.documentId || req.body.document;
         if (!docId) {
@@ -29,9 +30,11 @@ const checkDocumentOwnership = async(req, res, next) => {
             return res.status(403).json({ message: "Access denied: Not authorized" });
         }
 
+        
         next();
-    } catch (error) {
-        console.error(error);
+        
+    } catch (e) {
+        console.error(e);
         return res.status(500).json({ message: "Server error in ownership check" });
     }
 };
