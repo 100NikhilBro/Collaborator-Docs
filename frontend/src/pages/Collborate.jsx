@@ -3,7 +3,7 @@ import axios from 'axios';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { UserRound } from 'lucide-react';
-import { useNavigate } from 'react-router-dom'; // 🚨 Add this
+import { useNavigate } from 'react-router-dom'; 
 
 const fetchUsers = async () => {
   try {
@@ -15,7 +15,7 @@ const fetchUsers = async () => {
 };
 
 const Collborate = () => {
-  const navigate = useNavigate(); // 🚨 Add this hook
+  const navigate = useNavigate(); 
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ["users"],
@@ -38,7 +38,7 @@ const Collborate = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-black text-white relative overflow-hidden">
-      {/* Background SVGs */}
+     
       <div className="absolute top-0 left-0 opacity-20 blur-2xl w-full h-full -z-10">
         <svg viewBox="0 0 800 600" className="w-full h-full">
           <circle cx="400" cy="300" r="250" fill="#0f172a" />
@@ -46,9 +46,9 @@ const Collborate = () => {
       </div>
 
       <div className="relative z-10 py-12 px-6 md:px-16">
-        {/* 🔘 Top Row with Button and Heading */}
+       
         <div className="flex items-center justify-between mb-10 flex-wrap gap-4">
-          {/* 🖊️ Button */}
+         
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -58,13 +58,13 @@ const Collborate = () => {
             ➕ Create New Doc
           </motion.button>
 
-          {/* 🏷️ Heading */}
+          
           <h1 className="text-4xl font-bold text-center w-full md:w-auto bg-gradient-to-r from-white to-slate-400 text-transparent bg-clip-text">
             Collaborate with Team
           </h1>
         </div>
 
-        {/* 👥 User Grid */}
+      
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {user.map((d) => (
             <motion.div
