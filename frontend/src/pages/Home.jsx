@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center px-6 py-12 bg-gradient-to-br from-black via-[#1e1e1e] to-gray-900 text-white overflow-hidden">
       
-      {/* 🔲 Background Cross Pattern */}
+      
       <div
         className="absolute inset-0 opacity-10 bg-repeat"
         style={{
@@ -19,9 +19,9 @@ const HomePage = () => {
         }}
       ></div>
 
-      {/* Main Content */}
+     
       <div className="text-center max-w-2xl z-10">
-        {/* 🔤 One-Time Main Title */}
+        
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ const HomePage = () => {
           Real-time collaboration feature coming soon
         </motion.h1>
 
-        {/* 🔁 Typing Subtitle */}
+       
         <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-purple-300 h-10 mb-6">
           <TypeAnimation
             sequence={["Anywhere", 2000, "Anytime", 2000]}
@@ -41,7 +41,7 @@ const HomePage = () => {
           />
         </h2>
 
-        {/* 📃 Description */}
+       
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ const HomePage = () => {
           Create, share, and collaborate with your team in real-time. Fast, intuitive, and beautiful.
         </motion.p>
 
-        {/* 🖱️ Buttons with Hover Slide */}
+        
         <motion.div
           className="flex justify-center gap-4 flex-wrap"
           initial={{ opacity: 0, y: 20 }}
