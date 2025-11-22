@@ -120,7 +120,7 @@ const Profile = () => {
         exit="exit"
         variants={containerVariants}
       >
-        {/* Left side: avatar + username + arrow */}
+        
         <div className="flex flex-col items-center justify-center flex-[0.4] bg-indigo-900 border-r-2 border-indigo-700 p-10 select-none">
           <motion.img
             src={`https://api.dicebear.com/6.x/adventurer/svg?seed=${encodeURIComponent(avatarSeed)}`}
@@ -134,7 +134,7 @@ const Profile = () => {
             {formData.name || 'Guest User'}
           </h2>
 
-          {/* Arrow inside circle */}
+          
           <motion.div
             onClick={handleIconClick}
             role="button"
@@ -152,7 +152,7 @@ const Profile = () => {
           </motion.div>
         </div>
 
-        {/* Right side: form */}
+        
         <div className="flex-[0.6] p-10 flex flex-col gap-5">
           <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             {['name', 'email', 'role', 'password'].map((field) => (
