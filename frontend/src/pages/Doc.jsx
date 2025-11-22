@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const createDocAPI = async (docData) => {
   const res = await axios.post("/api/documents/createdoc", docData);
-  return res.data; // Expected: { document: { _id, title, collaborators }, message }
+  return res.data; 
 };
 
 const DocPage = () => {
@@ -20,7 +20,7 @@ const DocPage = () => {
     onSuccess: (data) => {
       if (data?.document?._id) {
         setMessage({ type: "success", text: "Document created successfully!" });
-        // Automatic navigate after creation:
+       
         navigate(`/showdoc/${data.document._id}`);
       } else {
         setMessage({ type: "success", text: data.message || "Document created!" });
@@ -39,7 +39,7 @@ const DocPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (mutation.isLoading) return; // Prevent double submit
+    if (mutation.isLoading) return; 
 
     const collabArr = collaborators
       .split(",")
