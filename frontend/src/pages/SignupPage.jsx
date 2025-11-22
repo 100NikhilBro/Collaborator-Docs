@@ -19,11 +19,11 @@ const SignupForm = () => {
       return response.data;
     },
     onSuccess: () => {
-      toast.success('✅ User created successfully!');
+      toast.success('User created successfully!');
       setFormData({ name: '', email: '', password: '', role: 'user' });
     },
     onError: (error) => {
-      toast.error(`❌ ${error.response?.data?.message || 'Signup failed'}`);
+      toast.error(`${error.response?.data?.message || 'Signup failed'}`);
     },
   });
 
@@ -50,10 +50,10 @@ const SignupForm = () => {
         }}
       />
 
-      {/* Content container */}
+      
       <div className="relative z-10 max-w-md w-full p-10 bg-slate-900/90 rounded-2xl shadow-lg backdrop-blur-md border border-slate-700">
 
-        {/* Heading */}
+       
         <motion.h1
           className="text-3xl font-extrabold mb-8 text-white text-center"
           initial={{ opacity: 0, y: -40 }}
@@ -63,10 +63,10 @@ const SignupForm = () => {
           Create For Collaborate
         </motion.h1>
 
-        {/* Toast container */}
+       
         <ToastContainer position="top-right" autoClose={3000} />
 
-        {/* Form */}
+    
         <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-white">
 
           <input
@@ -114,13 +114,13 @@ const SignupForm = () => {
             disabled={mutation.isLoading}
             initial={{
               background:
-                'linear-gradient(to right, #111827, #1f2937, #374151)', // dark slate gradient
-              color: '#f9fafb', // almost white text
+                'linear-gradient(to right, #111827, #1f2937, #374151)', 
+              color: '#f9fafb', 
             }}
             whileHover={{
               background:
-                'linear-gradient(to right, #374151, #1f2937, #111827)', // reversed dark gradient on hover
-              color: '#e0e7ff', // lighter text on hover
+                'linear-gradient(to right, #374151, #1f2937, #111827)', 
+              color: '#e0e7ff', 
             }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
             className="font-semibold py-3 rounded-lg shadow-md w-full"
@@ -129,7 +129,7 @@ const SignupForm = () => {
           </motion.button>
         </form>
 
-        {/* Extra line below form */}
+      
         <p className="mt-6 text-center text-sm text-gray-400">
           Already registered?{' '}
           <a href="/login" className="text-blue-400 hover:underline">
