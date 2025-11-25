@@ -11,7 +11,7 @@
 Security Features
 -  sanitize-html – To prevent XSS attacks by sanitizing user input.
 -  helmet – Helps secure Express apps by setting various HTTP headers.
--  secure-password – For safely hashing and verifying passwords using Argon2 (stronger and more secure than bcrypt).
+-  secure-password – For safely hashing and verifying passwords .
 -  express-validator – To validate and sanitize incoming request data.
 
 Future Plans
