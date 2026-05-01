@@ -5,7 +5,6 @@ const { cleanInput } = require("../utils/sanitizeInput");
 
 
 
-// 1. Add collaborator to a document
 exports.addCollaborator = async(req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
@@ -20,13 +19,13 @@ exports.addCollaborator = async(req, res) => {
         const doc = await Doc.findById(docId);
         if (!doc) return res.status(404).json({ message: "Document not found" });
 
-        // Check if user already collaborator
+        
         const existingCollab = doc.collaborators.find(c => c.user.toString() === userId);
         if (existingCollab) {
             return res.status(400).json({ message: "User is already a collaborator" });
         }
 
-        // Check if user exists
+        
         const user = await User.findById(userId);
         if (!user) return res.status(404).json({ message: "User not found" });
 
@@ -42,7 +41,7 @@ exports.addCollaborator = async(req, res) => {
 
 
 
-// 2. Remove collaborator from document
+
 exports.removeCollaborator = async(req, res) => {
     try {
         const { docId, userId } = req.params;
@@ -71,7 +70,7 @@ exports.removeCollaborator = async(req, res) => {
 
 
 
-// 3. Change collaborator role (editor/viewer)
+
 exports.changeCollaboratorRole = async(req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
@@ -103,7 +102,6 @@ exports.changeCollaboratorRole = async(req, res) => {
 
 
 
-// 4. Get collaborators of a document
 exports.getCollaborators = async(req, res) => {
     try {
         const { docId } = req.params;
