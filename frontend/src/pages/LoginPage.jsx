@@ -49,7 +49,7 @@ const LoginForm = () => {
         style={{
           backgroundImage: `url("data:image/svg+xml,%3csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='0' y1='0' x2='40' y2='40' stroke='%23707070' stroke-width='1'/%3e%3cline x1='40' y1='0' x2='0' y2='40' stroke='%23707070' stroke-width='1'/%3e%3c/svg%3e")`,
           backgroundRepeat: 'repeat',
-          opacity: 0.1,
+          opacity: 0.2,
           zIndex: 0,
         }}
       />
@@ -62,7 +62,7 @@ const LoginForm = () => {
           className="text-3xl font-extrabold mb-8 text-white text-center"
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8 }}
         >
           Welcome Back
         </motion.h1>
