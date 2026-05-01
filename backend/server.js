@@ -18,12 +18,9 @@ app.use(cors({
     credentials: true,
 }));
 
-
-
 app.use(morgan("dev"));
 app.use(helmet());
 app.use(hpp());
-
 
 app.use(cookieParser());
 app.use(express.json());
@@ -39,7 +36,6 @@ app.use('/api/users', userRoutes);
 app.use('/api/documents', documentRoutes);
 app.use('/api/activities', activityRoutes);
 app.use('/api/collaborators', collaboratorRoutes);
-
 
 const PORT = process.env.PORT || 5678;
 
