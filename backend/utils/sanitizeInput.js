@@ -1,5 +1,7 @@
 const sanitizeHtml = require('sanitize-html');
 
+// Later do deep Sanitization
+
 exports.cleanInput = (obj) => {
     const clean = {};
     for (let key in obj) {
