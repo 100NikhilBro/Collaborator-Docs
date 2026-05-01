@@ -1,4 +1,4 @@
- A full-stack collaborative App
+ A full-stack Collaborative Application
 
  Features
 -  User Authentication (JWT-based)
