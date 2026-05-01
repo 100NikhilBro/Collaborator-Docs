@@ -10,6 +10,7 @@ const getDoc = async () => {
   return res.data;
 };
 
+// update doc
 const updateDoc = async ({ id, title }) => {
   return axios.put(`/api/documents/updatedoc/${id}`, { title });
 };
